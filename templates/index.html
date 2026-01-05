@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideManager - Sistema de Gestión de Viajes para Agencias de Remis y Taxi</title>
+    <meta name="description"
+        content="Modernizá tu agencia de remis con tecnología simple. Sistema completo de gestión de viajes diseñado para ciudades pequeñas.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar-fixed">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <div class="brand-icon me-2">
+                        <i class="bi bi-car-front-fill"></i>
+                    </div>
+                    <span class="fw-bold fs-4">RideManager</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#beneficios">Beneficios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#como-funciona">Cómo Funciona</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#app-pasajero">App Pasajero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/542254533331" target="_blank" class="btn btn-primary">
+                        Solicitar Demo
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100 pt-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="badge-custom mb-3">
+                        🚗 Para Agencias de Taxi o Remis
+                    </span>
+                    <h1 class="hero-title">
+                        Modernizá tu agencia con
+                        <span class="text-gradient">tecnología Profesional</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Diseñado para agencias de <strong>Taxis y Remis</strong>.
+                        Lleva tu negocio al siguiente nivel con tecnología profesional. Gestiona viajes, choferes y pasajeros desde una
+                        plataforma diseñada para agencias que quieren crecer.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="https://wa.me/542254533331" target="_blank" class="btn btn-primary btn-lg px-4">
+                            Solicitar Demo Gratis
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <a href="#como-funciona" class="btn btn-outline-info text-gradient btn-lg px-4">
+                            Ver Cómo Funciona
+                        </a>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-4">
+                        <div class="feature-check">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <span>Gestión completa de viajes</span>
+                        </div>
+                        <div class="feature-check">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <span>Control de choferes</span>
+                        </div>
+                        <div class="feature-check">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <span>App para tus pasajeros</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 position-relative" data-aos="fade-left">
+                    <div class="hero-image-wrapper">
+                        <img src="static/images/agency-owner.jpg" alt="Dueño de agencia gestionando su flota"
+                            class="img-fluid rounded-4 shadow-lg">
+                        <div class="hero-gradient-overlay"></div>
+                    </div>
+
+                    <!-- Stats Card -->
+                    <div class="stat-card">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="stat-icon">
+                                <i class="bi bi-plus"></i>
+                            </div>
+                            <div>
+                                <p class="stat-number mb-0">150%</p>
+                                <p class="stat-label mb-0">más eficiencia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema / Solución -->
+    <section class="problem-solution py-5">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <span class="badge bg-danger mb-3">El Problema</span>
+                    <h2 class="display-5 fw-bold mb-4">¿Tu agencia todavía funciona con llamadas y papel?</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex">
+                            <i class="bi bi-x-circle-fill text-danger me-3 fs-4"></i>
+                            <div>
+                                <strong>Llamadas constantes</strong> que saturan tus líneas telefónicas
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="bi bi-x-circle-fill text-danger me-3 fs-4"></i>
+                            <div>
+                                <strong>Pérdida de clientes</strong> por no querer esperar tiempos largos
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="bi bi-x-circle-fill text-danger me-3 fs-4"></i>
+                            <div>
+                                <strong>Choferes desorganizados</strong> sin saber como llegar al pasajero
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="bi bi-x-circle-fill text-danger me-3 fs-4"></i>
+                            <div>
+                                <strong>Sin control de viajes</strong> ni registros del día a día
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-white p-5 rounded-4 shadow-lg">
+                        <span class="badge bg-success mb-3">La Solución</span>
+                        <h3 class="fw-bold mb-4">Sistema Completo de Gestión Automática</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex">
+                                <i class="bi bi-check-circle-fill text-success me-3 fs-4"></i>
+                                <div>
+                                    <strong>Solicitudes automáticas</strong> desde App de pasajeros
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex">
+                                <i class="bi bi-check-circle-fill text-success me-3 fs-4"></i>
+                                <div>
+                                    <strong>Asignación inteligente</strong> al chofer más cercano
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex">
+                                <i class="bi bi-check-circle-fill text-success me-3 fs-4"></i>
+                                <div>
+                                    <strong>Navegación GPS</strong> vinculado con Google Maps 
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex">
+                                <i class="bi bi-check-circle-fill text-success me-3 fs-4"></i>
+                                <div>
+                                    <strong>Panel de control</strong> con registros de viajes
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex">
+                                <i class="bi bi-check-circle-fill text-success me-3 fs-4"></i>
+                                <div>
+                                    <strong>Transparencia y confianza:</strong> El pago es directo, sin barreras. Eligen si en efectivo o por transferencia.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Características -->
+    <section id="caracteristicas" class="features-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3">Sistema Completo para tu Agencia</h2>
+                <p class="lead text-muted">Todo lo que necesitas para gestionar tu flota de forma profesional</p>
+            </div>
+    
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="bi bi-phone-fill"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">App para Pasajeros</h4>
+                        <p class="text-muted">Tus clientes solicitan viajes desde su celular en segundos. Sin llamadas, sin
+                            esperas. Ven la ubicación del chofer en tiempo real.</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="bi bi-person-badge"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">App para Choferes</h4>
+                        <p class="text-muted">Tus choferes reciben viajes automáticamente. Ven todos los datos del pasajero
+                            y navegan con Google Maps directo a la ubicación.</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Panel de Administración</h4>
+                        <p class="text-muted">Controla toda tu operación desde un solo lugar. Ve todos los viajes activos,
+                            historial completo y reportes de facturación.</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="bi bi-map"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Navegación GPS Integrada</h4>
+                        <p class="text-muted">Los choferes usan Google Maps para llegar a cada pasajero. Rápido, seguro y
+                            confiable. Sin necesidad de llamar por direcciones.</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Métodos de Pago Flexibles</h4>
+                        <p class="text-muted">Efectivo o billetera virtual. Tus clientes eligen cómo pagar. Sistema simple y
+                            efectivo para ciudades pequeñas.</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Reportes y Estadísticas</h4>
+                        <p class="text-muted">Ve cuántos viajes hace cada chofer, ingresos diarios, horarios pico y más.
+                            Toma decisiones con datos reales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona para Choferes -->
+    <section id="como-funciona" class="driver-workflow py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3">¿Cómo funciona para tus Choferes?</h2>
+                <p class="lead text-muted">Proceso simple y efectivo que aumenta tus viajes diarios</p>
+            </div>
+    
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="workflow-step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <i class="bi bi-bell-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Recibe Solicitud</h5>
+                        <p class="text-muted">El chofer más cercano recibe una notificación automática con los datos del
+                            pasajero</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <div class="workflow-step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="bi bi-check2-circle"></i>
+                        </div>
+                        <h5 class="fw-bold">Acepta el Viaje</h5>
+                        <p class="text-muted">Con un toque acepta el viaje. Ve nombre, ubicación exacta y requisitos
+                            especiales</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <div class="workflow-step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Navega con GPS</h5>
+                        <p class="text-muted">Google Maps lo lleva directo a la ubicación. El pasajero ve cuándo llega el
+                            chofer</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <div class="workflow-step">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <i class="bi bi-check-circle-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Completa el Viaje</h5>
+                        <p class="text-muted">Al finalizar, marca el viaje como completado. Todo queda registrado
+                            automáticamente</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Screenshots Flow -->
+            <div class="row align-items-center g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="screenshot-card">
+                        <img src="static/images/app-screen-2.jpeg" width="60%" alt="Requisitos del viaje"
+                            class="img-fluid rounded-3 shadow">
+                        <div class="screenshot-caption">
+                            <h6 class="fw-bold">Requisitos Claros</h6>
+                            <p class="small text-muted">El chofer ve si necesita llevar valijas, coche bebé o mascotas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="screenshot-card">
+                        <img src="static/images/app-screen-3.jpeg" width="60%" alt="Buscando chofer"
+                            class="img-fluid rounded-3 shadow">
+                        <div class="screenshot-caption">
+                            <h6 class="fw-bold">Búsqueda Automática</h6>
+                            <p class="small text-muted">El sistema busca el chofer disponible más cercano</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="screenshot-card">
+                        <img src="static/images/app-screen-4.jpeg" width="60%" alt="Chofer encontrado"
+                            class="img-fluid rounded-3 shadow">
+                        <div class="screenshot-caption">
+                            <h6 class="fw-bold">Conexión Exitosa</h6>
+                            <p class="small text-muted">Pasajero y chofer conectados en segundos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge-custom mb-3">Beneficios para tu Agencia</span>
+                <h2 class="section-title">Todo lo que necesitás para crecer</h2>
+                <p class="section-subtitle">
+                    Herramientas pensadas para dueños de agencias de remis que quieren dar el salto digital.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Benefit 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon bg-success">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4 class="benefit-title">+40% Más Viajes</h4>
+                            <p class="benefit-text">
+                                Al eliminar las llamadas telefónicas, tus choferes hacen más viajes por día.
+                                No pierdes clientes cuando las líneas están ocupadas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon bg-primary">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                        <h4 class="benefit-title">Ahorra 20+ Horas Semanales</h4>
+                        <p class="benefit-text">
+                            Ya no necesitas operadores atendiendo llamadas todo el día.
+                            El sistema asigna viajes automáticamente.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon bg-warning">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h4 class="benefit-title">Clientes Más Satisfechos</h4>
+                        <p class="benefit-text">
+                            Los pasajeros ven exactamente dónde está el chofer y cuándo llega.
+                            Menos quejas, más reseñas positivas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon bg-info">
+                            <i class="bi bi-bar-chart"></i>
+                        </div>
+                        <h4 class="benefit-title">Control Total</h4>
+                        <p class="benefit-text">
+                            Reportes diarios, semanales y mensuales.
+                            Sabé exactamente cuánto factura tu agencia y cada chofer.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon bg-danger">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4 class="benefit-title">Más Seguridad</h4>
+                        <p class="benefit-text">
+                            Registro completo de todos los viajes.
+                            Los pasajeros ven datos del chofer y vehículo antes de subir.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon bg-purple">
+                            <i class="bi bi-trophy"></i>
+                        </div>
+                        <h4 class="benefit-title">Ventaja Competitiva</h4>
+                        <p class="benefit-text">
+                            Sé la agencia más moderna de tu ciudad.
+                            Los clientes jóvenes prefieren apps sobre llamadas telefónicas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="como-funciona" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="badge-custom mb-3">Flujo Simple</span>
+                    <h2 class="section-title text-start">Así de fácil funciona para tus choferes</h2>
+                    <p class="section-subtitle text-start mb-5">
+                        Sin capacitaciones largas. Si saben usar WhatsApp, pueden usar nuestra app.
+                    </p>
+
+                    <div class="steps-wrapper">
+                        <!-- Step 1 -->
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h5 class="step-title">
+                                    <i class="bi bi-phone me-2 text-primary"></i>
+                                    Pasajero solicita viaje
+                                </h5>
+                                <p class="step-text">
+                                    Desde la app, el pasajero marca su ubicación y requisitos especiales
+                                    (valijas, mascotas, etc.).
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h5 class="step-title">
+                                    <i class="bi bi-bell me-2 text-primary"></i>
+                                    Chofer recibe y acepta
+                                </h5>
+                                <p class="step-text">
+                                    El viaje llega al celular del chofer disponible. Con un tap confirma
+                                    y el pasajero recibe la notificación.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h5 class="step-title">
+                                    <i class="bi bi-geo-alt me-2 text-primary"></i>
+                                    Navega con Google Maps
+                                </h5>
+                                <p class="step-text">
+                                    El chofer abre Google Maps integrado y llega a destino sin perderse.
+                                    Rutas precisas y confiables.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps Badge -->
+                    <div class="google-maps-badge">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <span class="fw-medium">Integrado con Google Maps</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="static/images/driver-navigation.jpg" alt="Chofer usando navegación GPS"
+                            class="img-fluid rounded-4 shadow-lg">
+                        <div class="decorative-circle top"></div>
+                        <div class="decorative-circle bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Showcase Section -->
+    <section id="app-pasajero" class="section-padding bg-gradient-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge-custom mb-3">App para Pasajeros</span>
+                <h2 class="section-title">Experiencia moderna para tus clientes</h2>
+                <p class="section-subtitle">
+                    Tus pasajeros piden viajes como en Uber, pero con tu agencia local.
+                    Fácil de usar, sin necesidad de explicaciones.
+                </p>
+            </div>
+
+            <!-- Phone Mockups -->
+            <div class="phone-mockups-wrapper mb-5">
+                <div class="phone-mockup large featured">
+                    <div class="phone-screen">
+                        <img src="static/images/app-screen-1.jpeg" alt="App pantalla 1">
+                    </div>
+                </div>
+
+                <div class="phone-mockup large featured">
+                    <div class="phone-screen">
+                        <img src="static/images/app-screen-2.jpeg" alt="App pantalla 2">
+                    </div>
+                </div>
+                
+                <div class="phone-mockup large featured">
+                    <div class="phone-screen">
+                        <img src="static/images/app-screen-3.jpeg" alt="App pantalla 3">
+                    </div>
+                </div>
+
+                <div class="phone-mockup large featured">
+                    <div class="phone-screen">
+                        <img src="static/images/app-screen-4.jpeg" alt="App pantalla 4">
+                    </div>
+                </div>
+                
+                <div class="phone-mockup large featured">
+                    <div class="phone-screen">
+                        <img src="static/images/app-screen-5.jpeg" alt="App pantalla principal">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contacto" class="section-padding">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-bg-pattern"></div>
+                <div class="position-relative text-center">
+                    <h2 class="cta-title">¿Listo para modernizar tu agencia?</h2>
+                    <p class="cta-subtitle">
+                        Empezá hoy mismo con una demo gratuita. Sin compromiso, sin tarjeta de crédito.
+                    </p>
+
+                    <div class="d-flex flex-wrap justify-content-center gap-4 mb-4">
+                        <div class="cta-feature">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            <span>Demo personalizada gratuita</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            <span>Configuración incluida</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            <span>Soporte por WhatsApp</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            <span>Capacitación a tus choferes</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="https://wa.me/542254533331" target="_blank" class="btn btn-light btn-lg px-4">
+                            <i class="bi bi-whatsapp me-2"></i>
+                            Hablar por WhatsApp
+                        </a>
+                        <a href="/cdn-cgi/l/email-protection#beddd1d0cadfddcad1feccdbd3d7cddfcece90ddd1d3"
+                            class="btn btn-outline-light btn-lg px-4">
+                            Enviar Email
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-5">
+                    <a href="#" class="footer-brand d-flex align-items-center mb-3">
+                        <div class="brand-icon me-2">
+                            <i class="bi bi-car-front-fill"></i>
+                        </div>
+                        <span class="fw-bold fs-4">RideManager</span>
+                    </a>
+                    <p class="footer-description">
+                        Sistema de gestión de viajes diseñado para agencias de remis y taxi en ciudades pequeñas.
+                        Modernizá tu negocio con tecnología simple y efectiva.
+                    </p>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <h5 class="footer-title">Contacto</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="https://wa.me/542254533331" target="_blank">
+                                <i class="bi bi-telephone me-2"></i>
+                                +54 2254 533331
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/cdn-cgi/l/email-protection#4625292832272532290634232b2f352736366825292b">
+                                <i class="bi bi-envelope me-2"></i>
+                                <span class="__cf_email__"
+                                    data-cfemail="14777b7a607577607b546671797d677564643a777b79">[email&#160;protected]</span>
+                            </a>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="bi bi-geo-alt me-2"></i>
+                                Buenos Aires, Argentina
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-title">Enlaces</h5>
+                    <ul class="footer-links">
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#como-funciona">Cómo Funciona</a></li>
+                        <li><a href="#app-pasajero">App Pasajero</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="mb-0">© 2024 RideManager. Todos los derechos reservados.</p>
+                <p class="mb-0">Hecho con ❤️ para agencias de remis</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
