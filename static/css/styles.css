@@ -150,6 +150,12 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 120px;
+    }
+}
+
 .badge-custom {
     display: inline-flex;
     align-items: center;
