@@ -209,11 +209,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // ===================================
   // Console welcome message
   // ===================================
-  console.log(
-    "%c RemisApp ",
-    "background: #3B82F6; color: white; font-size: 16px; font-weight: bold; padding: 5px 10px; border-radius: 5px;"
-  );
-  console.log("Landing page loaded successfully!");
 });
 
 // ===================================

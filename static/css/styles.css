@@ -343,6 +343,50 @@ body {
     margin-bottom: 0;
 }
 
+/* Benefit Cards */
+.benefit-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1.5rem;
+  transition: all 0.3s;
+}
+
+.benefit-card:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 2rem;
+  color: white;
+}
+
+.benefit-content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .benefit-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .benefit-icon {
+    margin: 0 auto;
+  }
+}
+
+
 /* === How It Works Section === */
 .steps-wrapper {
     display: flex;
@@ -730,7 +774,7 @@ body {
   position: relative;
 }
 
-.step-number {
+.step-number-2 {
   position: absolute;
   top: -10px;
   right: 10px;
